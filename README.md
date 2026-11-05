@@ -4,7 +4,7 @@ Panel de administracion que alimenta el core de **Rutea EC**: un sistema que arm
 
 Demo desplegada: https://rutea-ec-admin.onrender.com
 Autor: Sebastian Parra - Ingeniería Web - UDLA
-Video explicativo: _pega aqui el link del video_
+Video explicativo: https://youtu.be/Y8WOundmwQQ
 
 ## Capturas
 | Login | Experiencias | Ciudades |
