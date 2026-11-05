@@ -2,7 +2,9 @@
 
 Panel de administracion que alimenta el core de **Rutea EC**: un sistema que arma planes de experiencias locales por ciudad segun las preferencias, el tiempo y el presupuesto del turista, y compara ciudades con un puntaje de aprovechamiento. Este panel carga los datos que el core usa: **experiencias** (precio y duracion), **ciudades** y **regiones**.
 
-Demo desplegada: _pega aqui el link de Render_
+Demo desplegada: https://rutea-ec-admin.onrender.com
+Autor: Sebastian Parra - Ingeniería Web - UDLA
+Video explicativo: _pega aqui el link del video_
 
 ## Tecnologia (la misma de Tasky)
 - **Backend:** Node.js + Express 5, patron MVC, sesiones con `express-session`
@@ -56,23 +58,20 @@ frontend/
 
 Todo excepto login exige sesion de administrador (responde 401 si no).
 
+## Variables de entorno (backend/.env)
+| Variable | Para qué sirve |
+|---|---|
+| DATABASE_URL | Cadena de conexión de Supabase (Session pooler) |
+| SESSION_SECRET | Frase larga con la que se firma la sesión |
+| PORT | Puerto del servidor (3000 por defecto) |
+| ADMIN_EMAIL, ADMIN_PASSWORD | Datos del primer administrador (solo los usa `npm run admin:create`) |
+
 ## Correr en tu computador
 1. Crear un proyecto en [Supabase](https://supabase.com) y copiar la cadena de conexion (Project Settings > Database > Connection string, Session pooler).
 2. En `backend`: `npm install`, copiar `.env.example` a `.env` y completar los valores.
 3. `npm run db:init` (crea tablas y datos iniciales) y `npm run admin:create` (crea el admin).
 4. Terminal 1, en `backend`: `npm run dev`
 5. Terminal 2, en `frontend`: `npm install` y `npm run dev`. Abrir http://localhost:5173
-
-## Subir a Git
-```
-git init
-git add .
-git commit -m "Admin MVC de Rutea EC"
-git branch -M main
-git remote add origin https://github.com/TU_USUARIO/ruta-ecuador-admin.git
-git push -u origin main
-```
-`.env` esta en `.gitignore`: nunca se sube.
 
 ## Deploy en Render
 1. New > Web Service > conectar el repositorio.

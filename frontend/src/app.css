@@ -102,3 +102,8 @@ th { color: var(--ink); font-weight: 800; }
 .duracion__relleno.tag--sierra { background: var(--sierra); }
 .duracion__relleno.tag--amazonia { background: var(--amazonia); color: var(--ink); }
 .duracion__texto { font-variant-numeric: tabular-nums; }
+
+/* Ajustes: la tabla no ensancha la página y los botones de acciones quedan en una fila */
+.content { min-width: 0; }
+td.actions { display: table-cell; white-space: nowrap; }
+td.actions .btn { margin-right: .4rem; }
