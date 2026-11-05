@@ -1,0 +1,10 @@
+{
+  "name": "ruta-ecuador-admin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Administracion MVC de Rutea EC: API Express + frontend Svelte 5",
+  "scripts": {
+    "build": "npm --prefix frontend install && npm --prefix frontend run build && npm --prefix backend install",
+    "start": "node backend/server.js"
+  }
+}
