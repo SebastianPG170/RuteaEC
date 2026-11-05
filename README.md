@@ -11,7 +11,7 @@ Video explicativo: https://youtu.be/Y8WOundmwQQ
 |---|---|---|
 | ![Login](capturas/login.png) | ![Experiencias](capturas/experiencias.png) | ![Ciudades](capturas/ciudades.png) |
 
-## Tecnologia (la misma de Tasky)
+## Tecnologia
 - **Backend:** Node.js + Express 5, patron MVC, sesiones con `express-session`
 - **Frontend (Vista):** Svelte 5 con Vite, router por hash
 - **Base de datos:** PostgreSQL en Supabase (libreria `pg`, consultas parametrizadas)
