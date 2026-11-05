@@ -107,3 +107,11 @@ th { color: var(--ink); font-weight: 800; }
 .content { min-width: 0; }
 td.actions { display: table-cell; white-space: nowrap; }
 td.actions .btn { margin-right: .4rem; }
+
+/* Tabla compacta: que quepa completa en pantallas de 1280 px sin scroll horizontal */
+th, td { padding: .65rem .6rem; }
+.ciudad { display: block; margin: .2rem 0 0; }
+.duracion { gap: .5rem; }
+.duracion__barra { width: 3.5rem; }
+td.actions .btn { padding: .35rem .8rem; font-size: .9rem; }
+@media (min-width: 60em) { .content { padding: 2rem; } }
