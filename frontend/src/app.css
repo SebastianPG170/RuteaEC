@@ -47,12 +47,12 @@ a { color: var(--ink); }
 .login { display: grid; min-height: 100vh; }
 @media (min-width: 60em) { .login { grid-template-columns: 1.1fr 1fr; } }
 .login__marca { display: flex; flex-direction: column; justify-content: center; gap: 1.5rem; padding: 2rem 1.5rem; background: var(--paper); border-bottom: 3px solid var(--ink); }
-@media (min-width: 60em) { .login__marca { padding: 4rem; border-bottom: 0; border-right: 3px solid var(--ink); } }
-.login__nombre { margin: 0; color: var(--ink); font: 800 clamp(3rem, 9vw, 6rem)/.9 var(--font-title); }
+@media (min-width: 60em) { .login__marca { padding: 2.5rem 4rem; gap: 1.25rem; border-bottom: 0; border-right: 3px solid var(--ink); } }
+.login__nombre { margin: 0; color: var(--ink); font: 800 clamp(2.5rem, min(9vw, 13vh), 6rem)/.9 var(--font-title); }
 .login__texto { margin: 0; max-width: 28rem; font-size: 1.1rem; }
 .login__franja { display: flex; height: .75rem; max-width: 28rem; border-radius: 999px; overflow: hidden; }
 .login__mapa { height: 14rem; width: auto; align-self: flex-start; }
-@media (min-width: 60em) { .login__mapa { height: 22rem; } }
+@media (min-width: 60em) { .login__mapa { height: clamp(8rem, 32vh, 20rem); } }
 .franja--amarillo { flex: 2; background: var(--amarillo); }
 .franja--azul { flex: 1; background: var(--azul); }
 .franja--rojo { flex: 1; background: var(--rojo); }

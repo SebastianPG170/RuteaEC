@@ -6,6 +6,11 @@ Demo desplegada: https://rutea-ec-admin.onrender.com
 Autor: Sebastian Parra - Ingeniería Web - UDLA
 Video explicativo: _pega aqui el link del video_
 
+## Capturas
+| Login | Experiencias | Ciudades |
+|---|---|---|
+| ![Login](capturas/login.png) | ![Experiencias](capturas/experiencias.png) | ![Ciudades](capturas/ciudades.png) |
+
 ## Tecnologia (la misma de Tasky)
 - **Backend:** Node.js + Express 5, patron MVC, sesiones con `express-session`
 - **Frontend (Vista):** Svelte 5 con Vite, router por hash
